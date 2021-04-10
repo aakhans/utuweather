@@ -11,7 +11,7 @@ class CityPagerAdapter(val fa: FragmentActivity) : FragmentStateAdapter(fa) {
 
     override fun createFragment(position: Int): Fragment {
        // create a cityfragment on swipe
-        return CityFragment(position,fa)
+        return CityFragment.newInstance(position)
 
     }
 }
